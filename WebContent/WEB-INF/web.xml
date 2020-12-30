@@ -9,7 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
+  <context-param>
+  	<param-name>company</param-name>
+  	<param-value>company</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>manager</param-name>
+  	<param-value>나</param-value>
+  </context-param>
   <servlet>
   	<servlet-name>LifeCycle</servlet-name>
   	<servlet-class>sample.LifeCycle</servlet-class>
@@ -18,5 +25,51 @@
   	<servlet-name>LifeCycle</servlet-name>
   	<url-pattern>/LifeCycle</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyFirstServlet</servlet-name>
+  	<servlet-class>sample.MyFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MyFirstServlet</servlet-name>
+  	<url-pattern>/MyFirstServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>InitParam</servlet-name>
+  	<servlet-class>sample.InitParam</servlet-class>
+  	<init-param>
+  		<param-name>tel</param-name>
+  		<param-value>010-0000-0000</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>email</param-name>
+  		<param-value>abc@abc.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InitParam</servlet-name>
+  	<url-pattern>/InitParam</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>VisitInsert</servlet-name>
+  	<servlet-class>bbs.VisitInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VisitInsert</servlet-name>
+  	<url-pattern>/VisitInsert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>VisitList</servlet-name>
+  	<servlet-class>bbs.VisitList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>VisitList</servlet-name>
+  	<url-pattern>/VisitList</url-pattern>
+  </servlet-mapping>
+  
   
 </web-app>
