@@ -17,6 +17,24 @@
   	<param-name>manager</param-name>
   	<param-value>나</param-value>
   </context-param>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/error/error404.jsp</location>
+  </error-page>
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/error/error500.jsp</location>
+  </error-page>
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <servlet>
   	<servlet-name>LifeCycle</servlet-name>
   	<servlet-class>sample.LifeCycle</servlet-class>
